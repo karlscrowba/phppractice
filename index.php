@@ -1,12 +1,9 @@
 <?php
-require_once __DIR__ . DIRECTORY_SEPARATOR . "commons.php";
-    ?>
-
-    <html>
+    require_once __DIR__ . DIRECTORY_SEPARATOR . "commons.php";
+?>
+<html>
     <head>
-        <title>
-
-        </title>
+        <title>Karl's Homepage</title>
     </head>
     <body>
         <form action="submit.php" method="post">
@@ -19,8 +16,6 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . "commons.php";
             <input type="reset"><br /> <br />
             <input type="datetime-local" name="Current Time">
         </form>
-        <?php
-        printcsv("data.csv");
-        ?>
+        <?php printcsv("data.csv"); ?>
     </body>
-    </html>
+</html>
